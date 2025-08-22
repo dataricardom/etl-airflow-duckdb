@@ -8,7 +8,7 @@ from include.controller import add_pokemon_to_db
 @dag(
     dag_id="api_postgres",
     description="Etl utilizando postgres",
-    schedule="@daily",
+    schedule="* * * * *",
     start_date=datetime(2025,8,21),
     catchup=False
         
